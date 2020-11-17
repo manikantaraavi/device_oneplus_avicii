@@ -175,6 +175,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     oneplus-fwk.oneplus_lito
 
+# Override  OTA assert
+TARGET_OTA_ASSERT_DEVICE := avicii,OnePlusNord
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.oneplus_lito
