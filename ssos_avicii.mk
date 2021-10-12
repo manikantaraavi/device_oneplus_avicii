@@ -28,6 +28,7 @@ $(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_AOSP_RECOVERY := true
+EXTRA_FOD_ANIMATIONS := true
 
 PRODUCT_NAME := ssos_avicii
 PRODUCT_DEVICE := avicii
