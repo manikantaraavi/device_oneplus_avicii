@@ -21,16 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from avicii device
 $(call inherit-product, device/oneplus/avicii/device.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common SSOS stuff.
+$(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 
-# PixelExperience Properties
+# SSOS Properties
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_AOSP_RECOVERY := true
-TARGET_USES_CUSTOM_AVB_KEY := true
 
-PRODUCT_NAME := aosp_avicii
+PRODUCT_NAME := ssos_avicii
 PRODUCT_DEVICE := avicii
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -40,5 +39,5 @@ CUSTOM_DEVICE := Nord
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=Nord \
+    PRODUCT_DEVICE=Nord,avicii \
     PRODUCT_NAME=Nord
