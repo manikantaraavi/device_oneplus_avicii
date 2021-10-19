@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/avicii/device.mk)
 
 # Inherit some common SSOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # SSOS Properties
 TARGET_GAPPS_ARCH := arm64
