@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, vendor/oneplus/avicii/avicii-vendor.mk)
 
 # Inherit Oneplus Camera
-$(call inherit-product, vendor/oneplus/avicii-camera/config.mk)
+#$(call inherit-product, vendor/oneplus/avicii-camera/config.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
