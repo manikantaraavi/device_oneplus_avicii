@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from avicii device
 $(call inherit-product, device/oneplus/avicii/device.mk)
 
-# Inherit some common PixelExperience stuff.
+# Inherit some common PEX stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# PixelExperience Properties
+# PEX Properties
 TARGET_USES_AOSP_RECOVERY := true
-TARGET_USES_CUSTOM_AVB_KEY := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_NAME := aosp_avicii
 PRODUCT_DEVICE := avicii
@@ -35,8 +35,11 @@ PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := AC2001
 CUSTOM_DEVICE := Nord
 
+BUILD_FINGERPRINT := "google/raven/raven:12/SQ1D.220105.007/8030436:user/release-keys"
+
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=Nord \
     PRODUCT_NAME=Nord
+    PRIVATE_BUILD_DESC="raven-user 12 SQ1D.220105.007 8030436 release-keys"
